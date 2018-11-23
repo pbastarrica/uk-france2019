@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Clock from '../../uk-france2019/src/Clock';
+import Arrows from '../../uk-france2019/src/slider';
 import './App.css';
 class App extends Component {
     constructor(props) {
@@ -11,14 +12,17 @@ class App extends Component {
 
     render() {
         return (
+
         <div className="App">
-            <div className="App-title">{this.state.deadline}</div>
             <Clock
                 deadline={this.state.deadline}
             />
-
+            <Arrows/>
+            
         </div>
+
         )
     }
-} 
+}
+
 export default App;

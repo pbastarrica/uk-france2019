@@ -36,13 +36,21 @@ class Clock extends Component {
     } 
     render() {
         return (
-        <div>
-            <div className="Clock-days">{this.leading0(this.state.days)}<span className="time">Days</span></div>   
-            <div className="Clock-hours">{this.leading0(this.state.hours)}<span className="time">Hours</span></div>     
-            <div className="Clock-minutes">{this.leading0(this.state.minutes)}<span className="time">Seconds</span></div>    
-            <div className="Clock-seconds">{this.leading0(this.state.seconds)}<span className="time">Minutes</span></div>    
- 
-         </div>
+            
+        <div className="header">
+            <div className="App-title">{this.props.deadline}</div>
+            <div>
+                <div className="Clock-days">{this.leading0(this.state.days)}<span className="time">Days</span></div>   
+                <div className="Clock-hours">{this.leading0(this.state.hours)}<span className="time">Hours</span></div>     
+                <div className="Clock-minutes">{this.leading0(this.state.minutes)}<span className="time">Minutes</span></div>    
+                <div className="Clock-seconds">{this.leading0(this.state.seconds)}<span className="time">Seconds</span></div>
+            </div>
+            <div className= "center">
+                <a href="https://www.google.com/maps/@48.9301711,-0.9914193,6z" target="_blank"><img src="./map.png" width="32" height="32" alt="Google Maps" /></a>
+                <a href="https://docs.google.com/spreadsheets/d/1_hiKzfbGHDecEOrDhtDaPz2XZKUFcYaPFkuksvEDrKE/edit#gid=0" target="_blank"><img src="./drive.png" width="32" height="32" alt="Drive sheet" /></a>    
+            </div>
+        </div>
+         
          
         )
     }
