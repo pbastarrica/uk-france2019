@@ -1,52 +1,39 @@
 import React, { Component } from 'react';
 
 
-
-
 class Arrows extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            current: 0
-        }
-    }
     render(){
-
         return(
             <React.Fragment>
                 <button
                     className="arrows arrow-left" 
-                    onClick={() => this.state.current === 2 ? 1 :
-                    console.log(this.state.current)      
-                    }>
-
-                </button>
+                    onClick={this.props.onPrevClick}
+                />
                 <button
                     className="arrows arrow-right" 
-                    onClick={() => this.state.current === 2 ? 1 : 
-                    console.log(this.state.current)
-                    }>
-                </button>
+                    onClick={this.props.onNextClick}
+                />
                 <div>
-                        <div id="slider">
-                            <div className="slide slide1">
-                                <div className="slide-content">
-                                </div>
-                            </div> 
-                            <div className="slide slide2">
-                                <div className="slide-content">
-                                </div>
-                            </div> 
-                            <div className="slide slide3">
-                                <div className="slide-content">
-                                </div>
-                            </div> 
-                        </div>
+                    <h1>{this.props.currentSlide}</h1>
+                    <div id="slider">
+                        <div className="slide slide1">
+                            <div className="slide-content">
+                            </div>
+                        </div> 
+                        <div className="slide slide2">
+                            <div className="slide-content">
+                            </div>
+                        </div> 
+                        <div className="slide slide3">
+                            <div className="slide-content">
+                            </div>
+                        </div> 
                     </div>
-         </React.Fragment>
+                </div>
+            </React.Fragment>
         );
     }
 }
- 
+
 
 export default Arrows;
