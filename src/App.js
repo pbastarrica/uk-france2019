@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import Clock from '../../uk-france2019/src/Clock';
-import Arrows from '../../uk-france2019/src/slider';
+import Slider from '../../uk-france2019/src/Slider';
 import './App.css';
+
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            deadline: 'April 04, 2019'
+            deadline: 'March 28, 2019'
         }
     }
 
@@ -17,12 +18,12 @@ class App extends Component {
             <Clock
                 deadline={this.state.deadline}
             />
-            <Arrows/>
+            <Slider/>
             
         </div>
 
         )
     }
 }
-
+// <Arrows/>
 export default App;
