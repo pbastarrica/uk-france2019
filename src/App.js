@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Clock from '../../uk-france2019/src/Clock';
-import Slider from '../../uk-france2019/src/Slider';
+import Clock from './Clock';
+import Slider from './Slider';
 import './App.css';
 
 class App extends Component {
