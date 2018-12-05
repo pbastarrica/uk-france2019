@@ -46,8 +46,12 @@ class Clock extends Component {
                 <div className="Clock-seconds">{this.leading0(this.state.seconds)}<span className="time">Seconds</span></div>
             </div>
             <div className= "center">
-                <a href="https://www.google.com/maps/@48.9301711,-0.9914193,6z" target="_blank"><img src="./map.png" width="32" height="32" alt="Google Maps" /></a>
-                <a href="https://docs.google.com/spreadsheets/d/1_hiKzfbGHDecEOrDhtDaPz2XZKUFcYaPFkuksvEDrKE/edit#gid=0" target="_blank"><img src="./drive.png" width="32" height="32" alt="Drive sheet" /></a>    
+                <a href="https://www.google.com/maps/@48.9301711,-0.9914193,6z" target="_blank" rel="noopener noreferrer">
+                    <img src="./map.png" width="32" height="32" alt="Google Maps" />
+                </a>
+                <a href="https://docs.google.com/spreadsheets/d/1_hiKzfbGHDecEOrDhtDaPz2XZKUFcYaPFkuksvEDrKE/edit#gid=0" target="_blank" rel="noopener noreferrer">
+                    <img src="./drive.png" width="32" height="32" alt="Drive sheet" />
+                </a>    
             </div>
         </div>
          
