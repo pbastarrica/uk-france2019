@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/uk-france2019/precache-manifest.8aa1d1f8aca46fae84084fbfe742fca3.js"
+  "/uk-france2019/precache-manifest.d7a7b53506acbca503beb1feeacb81e9.js"
 );
 
 workbox.clientsClaim();
