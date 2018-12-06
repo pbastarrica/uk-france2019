@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+const images = ["slide slide1", "slide slide2", "slide slide3"]
+
 
 class Arrows extends Component {
     render(){
@@ -14,22 +16,13 @@ class Arrows extends Component {
                     onClick={this.props.onNextClick}
                 />
                 <div>
-                    <h1>{this.props.currentSlide}</h1>
                     <div id="slider">
-                        <div className="slide slide1">
+                        <div className= {images[this.props.currentSlide]}>
                             <div className="slide-content">
                             </div>
                         </div> 
-                        <div className="slide slide2">
-                            <div className="slide-content">
-                            </div>
-                        </div> 
-                        <div className="slide slide3">
-                            <div className="slide-content">
-                            </div>
-                        </div> 
-                    </div>
-                </div>
+                     </div>
+                 </div>
             </React.Fragment>
         );
     }
